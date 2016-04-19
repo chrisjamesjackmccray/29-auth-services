@@ -48,7 +48,7 @@ class GalleryService {
     to your Firebase. Remember, this.gallery is your Firebase
     Array */
   add(item) {
-    this._newimage.$add(this.gallery);
+    this.gallery.$add(item);
   }
 
 }

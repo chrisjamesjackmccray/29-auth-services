@@ -1,0 +1,26 @@
+.main {
+  width: 350px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid gray; }
+
+image {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px; }
+
+h1 {
+  text-align: center; }
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 20px 0; }
+
+.nameandimage {
+  margin: 50px 0 0 0; }
+
+.thebox {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px; }

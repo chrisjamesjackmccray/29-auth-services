@@ -10,9 +10,10 @@ class GalleryController {
     GalleryService and pass in the newImage you're
     trying to create */
 
-  addImage() {
-    this._GalleryService.add(this.newimage);
+  addImage(){
+    this._GalleryService.add(this.newImage);
   }
+
 }
 
 export default GalleryController;

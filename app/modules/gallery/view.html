@@ -1,11 +1,23 @@
 
+<div class="main">
+  <form>
+    <h2> Enter Name And Image </h2>
+    <input type="text" placeholder="name" ng-model="galleryCtrl.newImage.name">
+    <input type="text" placeholder="image" ng-model="galleryCtrl.newImage.image">
+    <input type="button" value="submit" ng-click="galleryCtrl.addImage()">
 
-<form>
-  <input type="text" placeholder="name" ng-model="galleryCtrl.newImage.name">
-  <input type="text" placeholder="name" ng-model="galleryCtrl.newImage.image">
+  </form>
 
-</form>
+  <div class="nameandimage" ng-repeat="item in galleryCtrl.list">
 
-<div ng-repeat="item in galleryCtrl.list">
+    <div class="thebox">
+
+      <img src="{{ item.image }}"/>
+    </div>
+
+    <h1> {{ item.name }} </h1>
+
+
+  </div>
 
 </div>
