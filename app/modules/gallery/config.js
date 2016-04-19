@@ -1,8 +1,8 @@
 function config($stateProvider) {
   $stateProvider
-  .state("authService", {
+  .state("gallery", {
     url: "/",
-    controller: "authController as authCtrl",
+    controller: "GalleryController as galleryCtrl",
     template: require("./view.html")
   });
 }

@@ -5,7 +5,7 @@ class GalleryService {
     /* STEP 1 - CHANGE THE LINE BELOW! Add your Firebase URL */
     this.ref = new Firebase("https://29-auth-services.firebaseio.com/");
     this.auth = $firebaseAuth(this.ref);
-    $timeout(this.verifyLogin.bind(this), 1000);
+    this.verifyLogin();
   }
 
   verifyLogin() {
@@ -35,8 +35,8 @@ class GalleryService {
 
   new() {
     return {
-       name: "";
-       completed: false
+       name: "",
+       image: ""
      };
   }
 
@@ -48,8 +48,7 @@ class GalleryService {
     to your Firebase. Remember, this.gallery is your Firebase
     Array */
   add(item) {
-    this.list.$add(this.newimage);
-    this.newimage.name = "";
+    this._newimage.$add(this.gallery);
   }
 
 }
